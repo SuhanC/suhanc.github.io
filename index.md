@@ -4,7 +4,12 @@ layout: homepage
 
 ## About Me
 
-I am a bioinformatics researcher at Basgenbio Inc.
+I want to decode disease mechanisms using computational methods for human health progress. I'm passionate about advancing bioinformatics and developing treatments to benefit individuals with limited treatment options. I believe in personalized treatment strategies and aim to contribute to this field.
+
+My previous research involves developing early cancer recurrence detection methods with cfDNA-seq, using machine learning and gene regulatory network to identify targets for metastasic cancers, mostly cancer genomics projects.
+
+Currently, I'm working in Basgenbio Inc., creating drug repurposing algorithms with GWAS and Mendelian randomization.
+
 
 ## Research Interests
 
@@ -12,10 +17,12 @@ I am a bioinformatics researcher at Basgenbio Inc.
 - **Machine Learning:** Application to biological questions
 - **Large Language Models:** Biomedical Application, Knowledge Graph
 
+
 ## News
 
 - **[Feb. 2024]** I got graduated from KNOU(Korea Natioanl Open University), majoring in Computer Science! Added pinch of Computer Science to my academic footprints.
 - **[Oct. 2023]** We presented a poster about drug repurposing project using Mendelian Randomization at BIOINFO2023, Yeosu, South Korea.
+
 
 ## Experiences
 - [Deparment of AI Drug Development](https://basgenbio.com/en/index.php) @ Basgenbio Inc. (Seoul, Korea)
