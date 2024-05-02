@@ -10,6 +10,7 @@ My previous research involves developing early cancer recurrence detection metho
 
 Currently, I'm working in Basgenbio Inc., creating drug repurposing algorithms with GWAS and Mendelian randomization.
 
+I'm running my personal [Blog](http://suhansreisen.com/) for few years now. Come and see!
 
 ## Research Interests
 
@@ -22,7 +23,7 @@ Currently, I'm working in Basgenbio Inc., creating drug repurposing algorithms w
 
 - **[Feb. 2024]** I got graduated from KNOU(Korea Natioanl Open University), majoring in Computer Science! Added pinch of Computer Science to my academic footprints.
 - **[Oct. 2023]** We presented a poster about drug repurposing project using Mendelian Randomization at BIOINFO2023, Yeosu, South Korea.
-
+- **[Sep. 2023]** I won 2nd place in the Uniprot metal binding challenge held by EMBL-EBI. As a solo participant, this is the first time I have been honored at an international competition.
 
 ## Experiences
 - [Deparment of AI Drug Development](https://basgenbio.com/en/index.php) @ Basgenbio Inc. (Seoul, Korea)
