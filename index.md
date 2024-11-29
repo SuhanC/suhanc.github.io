@@ -8,7 +8,7 @@ I want to decode disease mechanisms using computational methods for human health
 
 My previous research involves developing early cancer recurrence detection methods with cfDNA-seq, using machine learning and gene regulatory network to identify targets for metastatic cancers, mostly cancer genomics projects.
 
-Currently, I'm working in Basgenbio Inc., creating drug repurposing algorithms with GWAS and Mendelian randomization.
+Currently, I'm a Ph.D Student in Max Planck Institute of Psychiatry, engaged in reasearch region of psychiatric disorders using multi-modal bioinformatic datasets.
 
 I'm running my personal [Blog](http://suhansreisen.com/) for few years now. Come and see!
 
@@ -21,11 +21,14 @@ I'm running my personal [Blog](http://suhansreisen.com/) for few years now. Come
 
 ## News
 
+- **[Oct.2024]** I started my Ph.D study in Max Planck Institute of Psychiatry, in Munich, Germany.
 - **[Feb. 2024]** I graduated from KNOU(Korea National Open University), majoring in Computer Science! Added pinch of Computer Science to my academic footprints.
 - **[Oct. 2023]** We presented a poster about drug repurposing project using Mendelian Randomization at BIOINFO2023, Yeosu, South Korea.
 - **[Sep. 2023]** I won 2nd place in the Uniprot metal binding challenge held by EMBL-EBI. As a solo participant, this is the first time I have been honored at an international competition.
 
 ## Experiences
+- [Department Genes and Environment, Binder Lab](https://www.psych.mpg.de/binder) @ MPI-Psych / LMU (Munich, Germany)
+  - Advisor : Prof. Dr. Elisabeth Binder
 - [Deparment of AI Drug Development](https://basgenbio.com/en/index.php) @ Basgenbio Inc. (Seoul, Korea)
   - June 2023 - Present
 - [Division of Early Cancer Diagnostics](https://www.imbdx.com/) @ IMD Dx Inc. (Seoul, Korea)
@@ -36,6 +39,8 @@ I'm running my personal [Blog](http://suhansreisen.com/) for few years now. Come
 
 
 ## Education
+- **Ludwig-Maximilians-Universität München** (Oct 2024 - )
+  - Ph.D in Neuroscience
 - **Kyung Hee University** (Mar 2020 - Aug 2021)
   - MS in Bioinformatics / Systems Biology
 - **Kyung Hee University** (Mar 2017 - Feb 2020)
