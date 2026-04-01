@@ -14,7 +14,7 @@ body {
   font-size: 16px;
   line-height: 1.75;
   color: #374151;
-  background-color: #f3f4f6;
+  background-color: #eef3ff;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -32,7 +32,7 @@ img { max-width: 100%; display: block; }
   position: sticky;
   top: 0;
   z-index: 200;
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(240, 246, 255, 0.97);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid #e5e7eb;
@@ -161,14 +161,14 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Hero ---------- */
 .site-hero {
-  background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
   padding: 72px 24px 60px;
   color: white;
 }
 
 @media (prefers-color-scheme: dark) {
   .site-hero {
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
   }
 }
 
@@ -294,7 +294,7 @@ h2::after {
   left: 0;
   width: 44px;
   height: 3px;
-  background: linear-gradient(90deg, #2563eb, #0ea5e9);
+  background: linear-gradient(90deg, #1d4ed8, #2563eb);
   border-radius: 2px;
 }
 
@@ -337,7 +337,7 @@ li { margin-bottom: 6px; }
 hr { border: none; border-top: 1px solid #e5e7eb; margin: 32px 0; }
 
 blockquote {
-  border-left: 3px solid #2563eb;
+  border-left: 3px solid #1d4ed8;
   margin: 0 0 20px;
   padding: 10px 0 10px 20px;
   font-style: italic;
@@ -352,9 +352,9 @@ blockquote {
   list-style: none;
 }
 #research-interests + ul li {
-  background: #ffffff;
-  border: 1px solid #d1d5db;
-  border-left: 3px solid #2563eb;
+  background: #f8faff;
+  border: 1px solid #bfdbfe;
+  border-left: 3px solid #1d4ed8;
   border-radius: 8px;
   padding: 10px 16px;
   margin: 0 0 10px 0;
@@ -382,8 +382,8 @@ blockquote {
   list-style: none;
 }
 #news + ul li {
-  background: #ffffff;
-  border: 1px solid #d1d5db;
+  background: #f8faff;
+  border: 1px solid #bfdbfe;
   border-radius: 8px;
   padding: 12px 18px;
   margin: 0 0 10px 0;
@@ -412,9 +412,9 @@ blockquote {
   list-style: none;
 }
 #experiences + ul > li {
-  background: #ffffff;
-  border: 1px solid #d1d5db;
-  border-left: 4px solid #2563eb;
+  background: #f8faff;
+  border: 1px solid #bfdbfe;
+  border-left: 4px solid #1d4ed8;
   border-radius: 8px;
   padding: 14px 18px;
   margin: 0 0 12px 0;
@@ -452,8 +452,8 @@ blockquote {
   list-style: none;
 }
 #education + ul li {
-  background: #ffffff;
-  border: 1px solid #d1d5db;
+  background: #f8faff;
+  border: 1px solid #bfdbfe;
   border-radius: 8px;
   padding: 16px 20px;
   margin: 0 0 10px 0;
@@ -501,8 +501,8 @@ blockquote {
 .pub-row {
   display: flex;
   align-items: flex-start;
-  background: #ffffff;
-  border: 1px solid #d1d5db;
+  background: #f8faff;
+  border: 1px solid #bfdbfe;
   border-radius: 10px;
   padding: 18px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
@@ -548,7 +548,7 @@ blockquote {
 
 .badge {
   display: inline-block;
-  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
   color: white !important;
   font-size: 11px;
   font-weight: 700;
