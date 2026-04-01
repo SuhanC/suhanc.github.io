@@ -8,9 +8,7 @@ I want to decode disease mechanisms using computational methods for human health
 
 My previous research involves developing early cancer recurrence detection methods with cfDNA-seq, using machine learning and gene regulatory network to identify targets for metastatic cancers, mostly cancer genomics projects.
 
-Currently, I'm a Ph.D Student in Max Planck Institute of Psychiatry, engaged in reasearch region of psychiatric disorders using multi-modal bioinformatic datasets.
-
-I'm running my personal [Blog](http://suhansreisen.com/) for few years now. Come and see!
+Currently, I'm a Ph.D Student in Max Planck Institute of Psychiatry & Helmholtz Center Munich, engaged in reasearch of brain aging in relation to psychiatric disorders using multi-modal bioinformatic datasets.
 
 ## Research Interests
 
