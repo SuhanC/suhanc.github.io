@@ -446,26 +446,26 @@ blockquote {
   #experiences + ul > li > ul { color: #94a3b8; }
 }
 
-/* Education */
+/* Education — single card */
 #education + ul {
-  padding: 0;
-  list-style: none;
-}
-#education + ul li {
   background: #f8faff;
   border: 1px solid #bfdbfe;
-  border-radius: 8px;
-  padding: 16px 20px;
-  margin: 0 0 10px 0;
+  border-radius: 10px;
+  padding: 4px 20px;
+  list-style: none;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-  font-size: 15px;
-  transition: box-shadow 0.2s;
 }
-#education + ul li:hover {
-  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.15);
+#education + ul li {
+  padding: 14px 0;
+  margin: 0;
+  font-size: 15px;
+  border-bottom: 1px solid #dbeafe;
+}
+#education + ul li:last-child {
+  border-bottom: none;
 }
 #education + ul li > ul {
-  margin: 8px 0 0;
+  margin: 6px 0 0;
   padding-left: 16px;
   list-style: disc;
   color: #6b7280;
@@ -473,14 +473,17 @@ blockquote {
 }
 #education + ul li > ul li {
   margin-bottom: 3px;
+  border-bottom: none;
+  padding: 0;
 }
 
 @media (prefers-color-scheme: dark) {
-  #education + ul li {
+  #education + ul {
     background: #1e293b;
     border-color: #334155;
     box-shadow: none;
   }
+  #education + ul li { border-bottom-color: #2d4060; }
   #education + ul li > ul { color: #94a3b8; }
 }
 
