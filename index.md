@@ -21,7 +21,9 @@ I'm running my personal [Blog](http://suhansreisen.com/) for few years now. Come
 
 ## News
 
-- **[Oct.2024]** I started my Ph.D study in Max Planck Institute of Psychiatry, in Munich, Germany.
+- **[Mar. 2026]** We published a conference paper [Structured and interpretable patient embeddings from Single-Cell Foundation Models
+](https://openreview.net/pdf/3adeaacee37e7c754b71c08d222c65a8a2d633f9.pdf) in ICLR 2026 Gen² 2026 Poster.
+- **[Oct. 2024]** I started my Ph.D study in Max Planck Institute of Psychiatry, in Munich, Germany.
 - **[Feb. 2024]** I graduated from KNOU(Korea National Open University), majoring in Computer Science! Added pinch of Computer Science to my academic footprints.
 - **[Oct. 2023]** We presented a poster about drug repurposing project using Mendelian Randomization at BIOINFO2023, Yeosu, South Korea.
 - **[Sep. 2023]** I won 2nd place in the Uniprot metal binding challenge held by EMBL-EBI. As a solo participant, this is the first time I have been honored at an international competition.
@@ -29,7 +31,9 @@ I'm running my personal [Blog](http://suhansreisen.com/) for few years now. Come
 ## Experiences
 - [Department Genes and Environment, Binder Lab](https://www.psych.mpg.de/binder) @ MPI-Psych / LMU (Munich, Germany)
   - Advisor : Prof. Dr. Elisabeth Binder
-- [Deparment of AI Drug Development](https://basgenbio.com/en/index.php) @ Basgenbio Inc. (Seoul, Korea)
+- [Institute of Computational Biology, Theis Lab](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) @ Helmholtz Center Munich (Munich, Germany)
+  - Advisor : Prof. Dr. Fabian Theis
+- [Department of AI Drug Development](https://basgenbio.com/en/index.php) @ Basgenbio Inc. (Seoul, Korea)
   - June 2023 - Present
 - [Division of Early Cancer Diagnostics](https://www.imbdx.com/) @ IMD Dx Inc. (Seoul, Korea)
   - July 2021 - June 2023
