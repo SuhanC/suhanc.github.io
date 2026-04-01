@@ -30,8 +30,10 @@ Currently, I'm a Ph.D Student in Max Planck Institute of Psychiatry & Helmholtz 
 ## Experiences
 - [Department Genes and Environment, Binder Lab](https://www.psych.mpg.de/binder) @ MPI-Psych / LMU (Munich, Germany)
   - Advisor : Prof. Dr. Elisabeth Binder
+  - Oct 2024 ~
 - [Institute of Computational Biology, Theis Lab](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab) @ Helmholtz Center Munich (Munich, Germany)
   - Advisor : Prof. Dr. Fabian Theis
+  - May 2025 ~
 - [Department of AI Drug Development](https://basgenbio.com/en/index.php) @ Basgenbio Inc. (Seoul, Korea)
   - June 2023 - Present
 - [Division of Early Cancer Diagnostics](https://www.imbdx.com/) @ IMD Dx Inc. (Seoul, Korea)
@@ -43,7 +45,7 @@ Currently, I'm a Ph.D Student in Max Planck Institute of Psychiatry & Helmholtz 
 
 ## Education
 - **Ludwig-Maximilians-Universität München** (Oct 2024 - )
-  - Ph.D in Neuroscience
+  - Ph.D in Medical Research
 - **Kyung Hee University** (Mar 2020 - Aug 2021)
   - MS in Bioinformatics / Systems Biology
 - **Kyung Hee University** (Mar 2017 - Feb 2020)
