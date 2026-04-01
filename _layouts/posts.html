@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <title>Posts | {{ site.title }}</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Blog posts by {{ site.title }}">
+
+    <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
+    <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
+    <script src="{{ '/assets/js/favicon-switcher.js' | relative_url }}" type="application/javascript"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin=anonymous>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+
+    <nav class="site-nav scrolled" id="siteNav">
+      <div class="nav-inner">
+        <a class="nav-brand" href="/">{{ site.title }}</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-menu" id="navMenu">
+          <a href="/">Home</a>
+          <a href="/posts/" class="active">Posts</a>
+          {% if site.cv_link %}<a href="{{ site.cv_link }}" target="_blank" class="nav-cv">CV <i class="fas fa-external-link-alt" style="font-size:10px"></i></a>{% endif %}
+        </div>
+      </div>
+    </nav>
+
+    <header class="posts-hero">
+      <div class="posts-hero-inner">
+        <h1 class="posts-hero-title">Posts</h1>
+        <p class="posts-hero-sub">Thoughts on research, bioinformatics, and life as a PhD student.</p>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <div class="content-wrap">
+        {% if site.posts.size > 0 %}
+          {% for post in site.posts %}
+          <article class="post-card">
+            <div class="post-card-meta">
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+              {% if post.categories.size > 0 %}
+                {% for cat in post.categories %}
+                <span class="post-tag">{{ cat }}</span>
+                {% endfor %}
+              {% endif %}
+            </div>
+            <h2 class="post-card-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+            {% if post.description %}
+            <p class="post-card-excerpt">{{ post.description }}</p>
+            {% elsif post.excerpt %}
+            <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 35 }}</p>
+            {% endif %}
+            <a href="{{ post.url | relative_url }}" class="post-read-more">Read more <i class="fas fa-arrow-right"></i></a>
+          </article>
+          {% endfor %}
+        {% else %}
+          <div class="posts-empty">
+            <p>No posts yet — check back soon!</p>
+          </div>
+        {% endif %}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+      </div>
+    </footer>
+
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    <script>
+      const nav = document.getElementById('siteNav');
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 10);
+      });
+      document.getElementById('navToggle').addEventListener('click', () => {
+        document.getElementById('navMenu').classList.toggle('open');
+        document.getElementById('navToggle').classList.toggle('open');
+      });
+    </script>
+  </body>
+</html>
