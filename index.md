@@ -22,7 +22,9 @@ I'm running my personal [Blog](http://suhansreisen.com/) for few years now. Come
 ## News
 
 - **[Mar. 2026]** We published a conference paper [Structured and interpretable patient embeddings from Single-Cell Foundation Models
-](https://openreview.net/pdf/3adeaacee37e7c754b71c08d222c65a8a2d633f9.pdf) in ICLR 2026 Gen² 2026 Poster.
+](https://openreview.net/pdf/3adeaacee37e7c754b71c08d222c65a8a2d633f9.pdf) in ICLR 2026 Gen² Workshop.
+- **[July. 2025]** My second first author paper, [miRNA centered regulatory networks identify FN1 and miR27b as metastatic drivers in HPV negative head and neck cancer](https://www.nature.com/articles/s41598-025-08646-3) is published in Scientific Reports, which is about dissecting cancer metastasis with miRNA-centered gene regulatory networks.
+- **[May. 2025]** I started to work as a Ph.D researcher in Helmholtz Center Munich, ICB, Germany.
 - **[Oct. 2024]** I started my Ph.D study in Max Planck Institute of Psychiatry, in Munich, Germany.
 - **[Feb. 2024]** I graduated from KNOU(Korea National Open University), majoring in Computer Science! Added pinch of Computer Science to my academic footprints.
 - **[Oct. 2023]** We presented a poster about drug repurposing project using Mendelian Randomization at BIOINFO2023, Yeosu, South Korea.
