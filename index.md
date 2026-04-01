@@ -13,8 +13,7 @@ Currently, I'm a Ph.D Student in Max Planck Institute of Psychiatry & Helmholtz 
 ## Research Interests
 
 - **Bioinformatics:** scRNA-seq, Spatial Transcriptomics, Systems Biology, Network Biology
-- **Machine Learning:** Application to biological questions
-- **Large Language Models:** Biomedical Application, Knowledge Graph
+- **Machine Learning:** Multi-trajectory inference of chronological aging using flow matching
 
 
 ## News
