@@ -13,11 +13,9 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
      <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin=anonymous>
 
      <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-     <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
    </head>
    <body>
 
@@ -35,65 +33,38 @@
        </div>
      </nav>
 
-     <header class="publications-hero">
-       <div class="publications-hero-inner">
-         <h1 class="publications-hero-title">Publications</h1>
-         <p class="publications-hero-sub">Peer-reviewed papers and conference contributions.</p>
+     <header class="posts-hero">
+       <div class="posts-hero-inner">
+         <h1 class="posts-hero-title">Publications</h1>
+         <p class="posts-hero-sub">Peer-reviewed papers and conference contributions.</p>
        </div>
      </header>
 
      <main class="site-main">
        <div class="content-wrap">
-         <div class="publications">
-           <ol class="bibliography">
-
-           {% for link in site.data.publications.main %}
-
-           <li>
-           <div class="pub-row">
-              <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-                {% if link.image %}
-                <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
-                {% endif %}
-                {% if link.conference_short %}
-                <abbr class="badge">{{ link.conference_short }}</abbr>
-                {% endif %}
-              </div>
-              <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-                  <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
-                  <div class="author">{{ link.authors }}</div>
-                  <div class="periodical"><em>{{ link.conference }}</em>
-                  </div>
-                <div class="links">
-                  {% if link.pdf %}
-                  <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-                  {% endif %}
-                  {% if link.code %}
-                  <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-                  {% endif %}
-                  {% if link.page %}
-                  <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
-                  {% endif %}
-                  {% if link.bibtex %}
-                  <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
-                  {% endif %}
-                  {% if link.notes %}
-                  <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
-                  {% endif %}
-                  {% if link.others %}
-                  {{ link.others }}
-                  {% endif %}
-                </div>
-              </div>
+         {% for link in site.data.publications.main %}
+         <article class="post-card">
+           <div class="post-card-meta">
+             <time datetime="{{ link.date | date_to_xmlschema }}">{{ link.date | date: "%B %Y" }}</time>
+             {% if link.conference_short %}
+             <span class="post-tag">{{ link.conference_short }}</span>
+             {% endif %}
            </div>
-           </li>
-
-           <br>
-
-           {% endfor %}
-
-           </ol>
-         </div>
+           <h2 class="post-card-title">
+             <a href="{{ link.pdf }}">{{ link.title }}</a>
+           </h2>
+           <p class="post-card-excerpt">{{ link.authors }}</p>
+           <p class="post-card-excerpt"><em>Published in {{ link.conference }}</em></p>
+           <div class="post-links">
+             {% if link.pdf %}
+             <a href="{{ link.pdf }}" class="post-read-more" target="_blank">PDF <i class="fas fa-external-link-alt"></i></a>
+             {% endif %}
+             {% if link.code %}
+             <a href="{{ link.code }}" class="post-read-more" target="_blank">Code <i class="fas fa-external-link-alt"></i></a>
+             {% endif %}
+           </div>
+         </article>
+         {% endfor %}
        </div>
      </main>
 
@@ -108,11 +79,11 @@
       const nav = document.getElementById('siteNav');
       window.addEventListener('scroll', () => {
         nav.classList.toggle('scrolled', window.scrollY > 10);
-      });
+       });
       document.getElementById('navToggle').addEventListener('click', () => {
         document.getElementById('navMenu').classList.toggle('open');
         document.getElementById('navToggle').classList.toggle('open');
-      });
+       });
      </script>
    </body>
 </html>
