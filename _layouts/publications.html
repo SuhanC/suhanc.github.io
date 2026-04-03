@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+   <head>
+     <title>Publications | {{ site.title }}</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="Publications by {{ site.title }}">
+
+     <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
+     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin=anonymous>
+
+     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+     <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
+   </head>
+   <body>
+
+     <nav class="site-nav scrolled" id="siteNav">
+       <div class="nav-inner">
+         <a class="nav-brand" href="/">{{ site.title }}</a>
+         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+           <span></span><span></span><span></span>
+         </button>
+         <div class="nav-menu" id="navMenu">
+           <a href="/">Home</a>
+           <a href="/publications/" class="active">Publications</a>
+           {% if site.cv_link %}<a href="{{ site.cv_link }}" target="_blank" class="nav-cv">CV <i class="fas fa-external-link-alt" style="font-size:10px"></i></a>{% endif %}
+         </div>
+       </div>
+     </nav>
+
+     <header class="publications-hero">
+       <div class="publications-hero-inner">
+         <h1 class="publications-hero-title">Publications</h1>
+         <p class="publications-hero-sub">Peer-reviewed papers and conference contributions.</p>
+       </div>
+     </header>
+
+     <main class="site-main">
+       <div class="content-wrap">
+         <div class="publications">
+           <ol class="bibliography">
+
+           {% for link in site.data.publications.main %}
+
+           <li>
+           <div class="pub-row">
+              <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+                {% if link.image %}
+                <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
+                {% endif %}
+                {% if link.conference_short %}
+                <abbr class="badge">{{ link.conference_short }}</abbr>
+                {% endif %}
+              </div>
+              <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+                  <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
+                  <div class="author">{{ link.authors }}</div>
+                  <div class="periodical"><em>{{ link.conference }}</em>
+                  </div>
+                <div class="links">
+                  {% if link.pdf %}
+                  <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+                  {% endif %}
+                  {% if link.code %}
+                  <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+                  {% endif %}
+                  {% if link.page %}
+                  <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
+                  {% endif %}
+                  {% if link.bibtex %}
+                  <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
+                  {% endif %}
+                  {% if link.notes %}
+                  <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
+                  {% endif %}
+                  {% if link.others %}
+                  {{ link.others }}
+                  {% endif %}
+                </div>
+              </div>
+           </div>
+           </li>
+
+           <br>
+
+           {% endfor %}
+
+           </ol>
+         </div>
+       </div>
+     </main>
+
+     <footer class="site-footer">
+       <div class="footer-inner">
+         <p class="footer-copy">&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+       </div>
+     </footer>
+
+     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+     <script>
+      const nav = document.getElementById('siteNav');
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 10);
+      });
+      document.getElementById('navToggle').addEventListener('click', () => {
+        document.getElementById('navMenu').classList.toggle('open');
+        document.getElementById('navToggle').classList.toggle('open');
+      });
+     </script>
+   </body>
+</html>

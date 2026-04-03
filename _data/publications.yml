@@ -1,1 +1,14 @@
 main:
+  - title: "Structured and interpretable patient embeddings from Single-Cell Foundation Models"
+    authors: "Su Han Cho, et al."
+    conference: "ICLR 2026 Gen² Workshop"
+    pdf: "https://openreview.net/pdf/3adeaacee37e7c754b71c08d222c65a8a2d633f9.pdf"
+    conference_short: "ICLR 2026"
+    date: "2026-03"
+
+  - title: "miRNA centered regulatory networks identify FN1 and miR27b as metastatic drivers in HPV negative head and neck cancer"
+    authors: "Su Han Cho, et al."
+    conference: "Scientific Reports"
+    pdf: "https://www.nature.com/articles/s41598-025-08646-3"
+    conference_short: "Sci Rep"
+    date: "2025-07"
