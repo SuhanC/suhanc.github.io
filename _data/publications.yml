@@ -2,15 +2,13 @@ main:
   - title: "Structured and interpretable patient embeddings from Single-Cell Foundation Models"
     authors: "Gonçalo Rei Pinto, Su Han Cho, ., Fabian J Theis"
     conference: "ICLR 2026 Workshop Gen2"
-    pdf: "https://openreview.net/pdf/3adeaacee37e7c754b71c08d222c65a8a2d633f9.pdf"
-    conference_short: "ICLR 2026"
+    Paper: "https://openreview.net/pdf?id=R69blzZXnr"
     date: "2026-03-01"
 
   - title: "miRNA centered regulatory networks identify FN1 and miR27b as metastatic drivers in HPV negative head and neck cancer"
     authors: "Su Han Cho, ., Young Chan Lee & Kwoneel Kim"
     conference: "Scientific Reports"
-    pdf: "https://www.nature.com/articles/s41598-025-08646-3"
-    conference_short: "Sci Rep"
+    Paper: "https://www.nature.com/articles/s41598-025-08646-3"
     date: "2025-07-01"
 
   - title: "Applications of Single-Cell Omics Technologies for iPSC-based Cardiovascular Research"
